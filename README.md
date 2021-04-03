@@ -16,7 +16,7 @@
     
     在这里，首先找到中国大部分城市的名字(国家统计局)，并读取成列表，而后在这所有的城市里面随机挑选10个，作为一个人旅行的路线，再每个城市随机赋予其权重。最后再将所有人的路线合并为一张图。
     
- [作业三](https://cdjnzpy.github.io/randomwalk.html)
+ [作业二](https://cdjnzpy.github.io/randomwalk.html)
  
  3. 作业三
 
