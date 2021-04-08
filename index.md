@@ -27,7 +27,7 @@
     
    在这里，首先找到中国大部分城市的名字(国家统计局)，并读取成列表，而后在这所有的城市里面随机挑选10个，作为一个人旅行的路线，再每个城市随机赋予其权重。最后再将所有人的路线合并为一张图。
     
-   [作业二](https://cdjnzpy.github.io/randomwalk.html)
+   [作业二：随机旅游](https://cdjnzpy.github.io/randomwalk.html)
  
 ## 3. 作业三
 
@@ -39,9 +39,9 @@
   
    而后将上述过程对所有年份进行使用，并将所有的列表整合为以年份为key的字典。并循环字典，输出每一年的GDP分布图，同时使用timeline将分布图进行在时间维度上的组合，得到丰富后的结果。
 
-  [作业三](https://cdjnzpy.github.io/GDP2020.html)
+  [作业三：各省份GPD](https://cdjnzpy.github.io/GDP2020.html)
   
-  [作业三-丰富](https://cdjnzpy.github.io/GDPyears10.html)
+  [作业三：10年](https://cdjnzpy.github.io/GDPyears10.html)
 
 ## 4. 作业四
 
