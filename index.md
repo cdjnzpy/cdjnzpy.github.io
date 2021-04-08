@@ -30,7 +30,7 @@
 
   [作业三](https://cdjnzpy.github.io/GDP2020.html)
   
-  [作业三-丰富](https://cdjnzpy.github.io/GDPyear.html)
+  [作业三-丰富](https://cdjnzpy.github.io/GDPyears.html)
 
 4. 作业四
 
