@@ -10,17 +10,17 @@
     
     除了课程中展示的两种图外，我还尝试了使用雷达图来表示人物词频数据。
     
-柱状图：横坐标
-    [作业一](https://cdjnzpy.github.io/hengzhede.html)
+
+    [作业一：柱状图+横坐标](https://cdjnzpy.github.io/hengzhede.html)
   
-柱状图：纵坐标
-    [作业一](https://cdjnzpy.github.io/shuzhede.html)
+
+    [作业一：柱状图+纵坐标](https://cdjnzpy.github.io/shuzhede.html)
   
-词云
-    [作业一](https://cdjnzpy.github.io/wordcould_name.html)
+
+    [作业一：词云](https://cdjnzpy.github.io/wordcould_name.html)
   
-雷达图
-    [作业一](https://cdjnzpy.github.io/count_actor.html)
+
+    [作业一：雷达图](https://cdjnzpy.github.io/count_actor.html)
   
  2. 作业二
     
