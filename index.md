@@ -17,7 +17,7 @@
     [作业一：柱状图+纵坐标](https://cdjnzpy.github.io/shuzhede.html)
   
 
-    [作业一：词云](https://cdjnzpy.github.io/wordcould_name.html)
+    [作业一：词云](https://cdjnzpy.github.io/wordcloud_name.html)
   
 
     [作业一：雷达图](https://cdjnzpy.github.io/count_actor.html)
