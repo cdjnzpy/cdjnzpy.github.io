@@ -10,17 +10,17 @@
     
     除了课程中展示的两种图外，我还尝试了使用雷达图来表示人物词频数据。
     
-    柱状图：横坐标
-  [作业一](https://cdjnzpy.github.io/hengzhede.html)
+柱状图：横坐标
+    [作业一](https://cdjnzpy.github.io/hengzhede.html)
   
-  柱状图：纵坐标
-  [作业一](https://cdjnzpy.github.io/shuzhede.html)
+柱状图：纵坐标
+    [作业一](https://cdjnzpy.github.io/shuzhede.html)
   
-  词云
-  [作业一](https://cdjnzpy.github.io/wordcould_name.html)
+词云
+    [作业一](https://cdjnzpy.github.io/wordcould_name.html)
   
-  雷达图
-  [作业一](https://cdjnzpy.github.io/count_actor.html)
+雷达图
+    [作业一](https://cdjnzpy.github.io/count_actor.html)
   
  2. 作业二
     
@@ -28,7 +28,7 @@
     
     在这里，首先找到中国大部分城市的名字(国家统计局)，并读取成列表，而后在这所有的城市里面随机挑选10个，作为一个人旅行的路线，再每个城市随机赋予其权重。最后再将所有人的路线合并为一张图。
     
- [作业二](https://cdjnzpy.github.io/randomwalk.html)
+[作业二](https://cdjnzpy.github.io/randomwalk.html)
  
  3. 作业三
 
