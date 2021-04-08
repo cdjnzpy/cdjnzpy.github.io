@@ -6,8 +6,20 @@
   
     具体过程为，选取文本为《红楼梦》，而后使用jieba分词对文本进行处理，保留和修改人物姓名并计算不同人物出现的次数。最终得出人物+出场次数结合的csv文件并保存。
   
-    在这次运用中，首先上次输出的csv文件进行读取，并处理为一一对应的列表文件。而后将其带入pyecharts中进行作图，最终得出一些结果
+    在这次运用中，首先上次输出的csv文件进行读取，并处理为一一对应的列表文件。而后将其带入pyecharts中进行作图，最终得出一些结果。
+    
+    除了课程中展示的两种图外，我还尝试了使用雷达图来表示人物词频数据。
+    
+    柱状图：横坐标
+  [作业一](https://cdjnzpy.github.io/hengzhede.html)
   
+  柱状图：纵坐标
+  [作业一](https://cdjnzpy.github.io/shuzhede.html)
+  
+  词云
+  [作业一](https://cdjnzpy.github.io/wordcould_name.html)
+  
+  雷达图
   [作业一](https://cdjnzpy.github.io/count_actor.html)
   
  2. 作业二
