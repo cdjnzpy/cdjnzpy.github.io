@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    /*背景*/
+    body{
+            background-image: url('background.jpg');
+            background-size: cover;
+        }
+    /*标题*/
+    h1
+    {
+        color:rgb(247, 84, 184);
+        font-weight:bold;
+        text-align: center;
+    }	
+    h2
+    {
+        color:rgb(76, 122, 248);
+        font-weight:bold;
+        text-align: left;
+    }	
+    p{ 
+	text-indent:2em;
+    }
+    /*字体*/
+
+    .content{
+        font-family:SimSum;
+    }
+
+    /*限制字体在中间的*/
+    .content1{
+        width: 80%;
+        margin:0 auto;
+    }
+
+    /*把文字那一坨空出来*/
+        .maincontent{
+        width: 80%;
+        margin: 0 auto;
+        height: 1600px;
+        background-color: seashell;
+    }
+
+    /*炫光特效*/
+     @keyframes headbring1{
+        0%{opacity: 0;}
+        8.33%{opacity: 1}
+        100%{opacity: 1}
+    }
+    @keyframes headbring2{
+        0%{opacity: 0;}
+        8.33%{opacity: 0;}
+        16.67%{opacity: 1}
+        100%{opacity: 1}
+    }
+    @keyframes headbring3{
+        0%{opacity: 0;}
+        16.67%{opacity: 0;}
+        25%{opacity: 1}
+        100%{opacity: 1}
+    }
+    @keyframes headbring4{
+        0%{opacity: 0;}
+        25%{opacity: 0;}
+        33.33%{opacity: 1}
+        100%{opacity: 1}
+    }
+    @keyframes headbring5{
+        0%{opacity: 0;}
+        33.33%{opacity: 0;}
+        41.67%{opacity: 1}
+        100%{opacity: 1}
+    }
+    @keyframes headbring6{
+        0%{opacity: 0;}
+        41.67%{opacity: 0;}
+        50%{opacity: 1}
+        100%{opacity: 1}
+    }
+    @keyframes headbring7{
+        0%{opacity: 0;}
+        50%{opacity: 0;}
+        58.33%{opacity: 1}
+        100%{opacity: 1}
+    }
+    @keyframes headbring8{
+        0%{opacity: 0;}
+        58.33%{opacity: 0;}
+        66.66%{opacity: 1}
+        100%{opacity: 1}
+    }
+    @keyframes headbring9{
+        0%{opacity: 0;}
+        66.66%{opacity: 0;}
+        75%{opacity: 1}
+        100%{opacity: 1}
+    }
+    @keyframes headbring10{        
+        0%{opacity: 0;}
+        75%{opacity: 0;}
+        83.33%{opacity: 1}
+        100%{opacity: 1}
+    }
+    @keyframes headbring11{
+        0%{opacity: 0;}
+        83.33%{opacity: 0;}
+        91.67%{opacity: 1}
+        100%{opacity: 1}
+    }
+    @keyframes headbring12{
+        0%{opacity: 0;}
+        91.67%{opacity: 0;}
+        100%{opacity: 1}
+    }
+    .doate{width:80%;height: 50px;background-color: rgb(255, 255, 255);margin: 0 auto;}
+    .diate1{float: left;width: 8.3333%;height: 50px;background-color: rgb(253, 125, 125);animation:  headbring1 1s ease-in-out infinite alternate}
+    .diate2{float: left;width: 8.3333%;height: 50px;background-color: rgb(253, 195, 120);animation:  headbring2 1s ease-in-out infinite alternate}
+    .diate3{float: left;width: 8.3333%;height: 50px;background-color: rgb(255, 235, 122);animation:  headbring3 1s ease-in-out infinite alternate}
+    .diate4{float: left;width: 8.3333%;height: 50px;background-color: rgb(215, 250, 120);animation:  headbring4 1s ease-in-out infinite alternate}
+    .diate5{float: left;width: 8.3333%;height: 50px;background-color: rgb(139, 250, 117);animation:  headbring5 1s ease-in-out infinite alternate}
+    .diate6{float: left;width: 8.3333%;height: 50px;background-color: rgb(118, 248, 183);animation:  headbring6 1s ease-in-out infinite alternate}
+    .diate7{float: left;width: 8.3333%;height: 50px;background-color: rgb(125, 214, 250);animation:  headbring7 1s ease-in-out infinite alternate}
+    .diate8{float: left;width: 8.3333%;height: 50px;background-color: rgb(118, 149, 248);animation:  headbring8 1s ease-in-out infinite alternate}
+    .diate9{float: left;width: 8.3333%;height: 50px;background-color: rgb(135, 115, 247);animation:  headbring9 1s ease-in-out infinite alternate}
+    .diate10{float: left;width: 8.3333%;height: 50px;background-color: rgb(195, 115, 248);animation:  headbring10 1s ease-in-out infinite alternate}
+    .diate11{float: left;width: 8.3333%;height: 50px;background-color: rgb(139, 36, 224);animation:  headbring11 1s ease-in-out infinite alternate}
+    .diate12{float: left;width: 8.3333%;height: 50px;background-color: rgb(248, 117, 198);animation:  headbring12 1s ease-in-out infinite alternate}
+    
+
+
+    /*小动画，那个卡片那个*/
+    @keyframes moves{
+            0%{position: relative;left:0px;}
+            100%{position: relative;left: -30px;transform-origin:bottom left;transform: rotate(-20deg)}
+        }
+    .pho{position: relative;top:0px;z-index: 10000;}
+    .bg:hover .pho{animation: moves 1s;animation-fill-mode: forwards;}
+    .bg{background-color: rgb(243, 126, 126);width: 25%;height: 200px;z-index: 5;position: relative;text-align: right;}
+    .prag{position: relative;bottom: 50px;}
+    .box1{
+        position: relative;
+        left: 10%;
+    }
+    .box2{
+        position: relative;
+        left: 40%;
+        top: -200px;
+    }
+    .box3{
+        position: relative;
+        left: 70%;
+        top: -400px;
+    }
+    .myself{
+        color: slategray;
+        font-style: italic;
+    }
+
+
+</style>
+<body>
+    <div class="doate">
+        
+        <div class="diate1"></div>
+        <div class="diate2"></div>
+        <div class="diate3"></div>
+        <div class="diate4"></div>
+        <div class="diate5"></div>
+        <div class="diate6"></div>
+        <div class="diate7"></div>
+        <div class="diate8"></div>
+        <div class="diate9"></div>
+        <div class="diate10"></div>
+        <div class="diate11"></div>
+        <div class="diate12"></div>        
+    </div>
+    <div class="maincontent">
+        <h1>史上最著名的十大演讲</h1>
+        <p class="myself">张培元 1800015438 第三次作业案例</p>
+        <h2>　　NO.1：丘吉尔演讲稿</h2>
+        <div class="content1">
+            <p>1940年6月4日丘吉尔在下院通报了敦刻尔克撤退成功，但是也提醒&ldquo;战争不是靠撤退打赢的。&rdquo;随后丘吉尔旋即发表了他在二战中最鼓舞人心的一段演说：</p>
+            <p>这次战役尽管我们失利，但我们决不投降，决不屈服，我们将战斗到底。</p>
+            <p>我们必须非常慎重，不要把这次援救说成是胜利。战争不是靠撤退赢得的。但是，在这次援救中却蕴藏着胜利，这一点应当注意到。这个胜利是空军获得的。归来的许许多多士兵未曾见到过我们空军的行动，他们看到的只是逃脱我们空军掩护性攻击的敌人轰炸机。他们低估了我们空军的成就。关于这件事，其理由就在这里。我一定要把这件事告诉你们。</p>
+            <p>这是英国和德国空军实力的一次重大考验。德国空军的目的是要是我们从海滩撤退成为不可能，并且要击沉所有密集在那里数以千计的船只。除此之外，你们能想象出他们还有更大的目的吗?除此而外，从整个战争的目的来说，还有什么更大的军事重要性和军事意义呢?他们曾全力以赴，但他们终于被击退了;他们在执行他们的任务中遭到挫败。我们把陆军撤退了，他们付出的代价，四倍于他们给我们造成的损失......已经证明，我们所有的各种类型的飞机和我们所有的飞行人员比他们现在面临的敌人都要都好。</p>
+        </div>
+
+        <h2>　　NO.2：亚伯拉罕.林肯演讲稿</h2>
+        <div class="content1">
+            <p>葛底斯堡演说是林肯总统演说中最著名的一篇，也是在美国历史中最常被引用的演说。这篇演说时值美国南北战争，距北方军击败南方叛军的葛底斯堡决定性战役仅4个半月;而演说的场所则是在宾夕法尼亚州葛底斯堡国家公墓的致辞典礼。</p>
+            <p>87年前，我们的先辈在这个大陆上创建了一个新的国家。她孕育于自由之中，奉行人人生来平等的信条。</p>
+        </div>
+
+        <h2>　　NO.3：马丁.路德.金演讲稿</h2>
+        <div class="content1">
+            <p>今天，我高兴地同大家一起，参加这次将成为我国历史上为了争取自由而举行的最伟大的示丅威集会。</p>
+            <p>从某种意义上说，我们来到国家的首都是为了兑现一张支票。我们共和国的缔造者在拟写宪法和独立宣言的辉煌篇章时，就签署了一张每一个美国人都能继承的期票。这张期票向所有人承诺&mdash;&mdash;不论白人还是黑人&mdash;&mdash;都享有不可让渡的生存权、自由权和追求幸福权。</p>
+            <p>然而，今天美国显然对她的有色公民拖欠着这张期票。美国没有承兑这笔神圣的债务，而是开始给黑人一张空头支票&mdash;&mdash;一张盖着&ldquo;资金不足&rdquo;的印戳被退回的支票。但是，我们决不相信正义的银行会破产。我们决不相信这个国家巨大的机会宝库会资金不足。因此，我们来兑现这张支票。这张支票将给我们以宝贵的自由和正义的保障。</p>
+        </div>  
+        <h3>　　鼠标放在下面图片上会有惊喜哦~</h3>
+            <div class="box1">
+                <div class="bg">
+                    <div class="pho">
+                        <img src="./pkq4.jpg" width="100%">
+                    </div>
+                    <p class="prag">皮卡丘</p>
+                </div>
+            </div>
+
+            <div class="box2">
+                <div class="bg">
+                    <div class="pho">
+                        <img src="./pkq5.jpg" width="100%">
+                    </div>
+                    <p class="prag">皮卡丘</p>
+                </div>
+            </div>
+
+            <div class="box3">
+                <div class="bg">
+                    <div class="pho">
+                        <img src="./pkq8.jpg" width="100%">
+                        
+                    </div>
+                    <p class="prag">爷是黄猿</p>
+                </div>
+            </div>
+
+    </div>
+
+
+</body>
+</html>
