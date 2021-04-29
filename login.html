@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>login</title>
+    <script src="http://libs.baidu.com/jquery/2.1.4/jquery.min.js"></script>
+
+    <style>
+        body{
+            background-image: url('loginback.jpg');
+            background-size: cover;
+        }
+        .inps{
+            height: 25px;
+            width: 200px;
+            margin-left: 5px;
+            margin-right: 5px;
+
+
+        }
+        #out {
+            width: 350px;
+            height: 300px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgba(124, 122, 122,0.75);
+            border-radius: 5%
+        }
+        #main {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .login-button {
+            width: 100px;
+            height: 30px;
+            border-width: 0px;
+            border-radius: 3px;
+            background: rgb(136, 201, 245);
+            cursor: pointer;
+            outline: none;
+            font-family: Microsoft YaHei;
+            color: white;
+            font-size: 17px;
+            position: relative;
+            left: 150px;
+        }
+        .login-button:hover {
+            background-color: rgb(98, 88, 235);
+        }
+
+    </style>
+</head>
+
+<body>
+    <div id="out">
+    <div id="main">
+        <span style="color: wheat"><b>用户名</b></span><br />
+        <input type="text" id="username" onkeyup="checkname()" class="inps"><br />
+        <span style="color: wheat"><b>密码</b></span><br />
+        <input type="password" id="number"  class="inps"><br />
+        <span style="position: relative;top:75px;left:-50px"> <a style="color:greenyellow" href="/signin">还没账号？点我注册</a></span>
+        <span style="position: relative;top:75px;left:50px"> <a style="color:greenyellow" href="/forget">忘记密码</a></span>
+        <button onclick="cals()" id="confirm" class="login-button">登录</button>
+        
+    </div>
+</div>
+    <script>
+        function cals() {
+
+            var data1 = $("#username").val()
+            var data2 = $("#number").val()
+            var data = {
+                "username": data1,
+                "number": data2,
+            }
+            $.ajax({
+
+                type: 'POST',
+                url: '/login/out',
+                data: JSON.stringify(data),
+                contentType: 'application/json; charset=UTF-8',
+                success: function (data) {
+                    var type=data.type
+                    if(type==0){
+                        alert("用户或密码错误")
+                    }
+                    else if (type==1){
+                        alert("登录成功")
+                        window.location.href='/mainnew'
+                    }
+                }
+
+
+            })
+
+
+
+
+
+        }
+
+
+
+    </script>
+</body>
+
+</html>
