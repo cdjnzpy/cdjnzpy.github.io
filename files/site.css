@@ -1,0 +1,121 @@
+/* Site additions for the 2026 research refresh. */
+:root {
+  --site-accent: #7a2634;
+  --site-accent-dark: #551a24;
+  --site-border: #e2e5e7;
+  --site-soft: #f7f8f8;
+  --site-muted: #6f767b;
+}
+
+.page__content a,
+.author__urls a {
+  color: var(--site-accent);
+}
+
+.page__content a:hover,
+.author__urls a:hover {
+  color: var(--site-accent-dark);
+}
+
+.page__content > .page__lead {
+  color: #555c61;
+}
+
+.about-intro {
+  max-width: 44rem;
+  text-align: justify;
+}
+
+.quick-links,
+.resource-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .55rem;
+  margin: 1.2rem 0 1.75rem;
+}
+
+.quick-links a,
+.resource-links a,
+.paper-links a {
+  display: inline-flex;
+  align-items: center;
+  gap: .35rem;
+  padding: .45rem .65rem;
+  border: 1px solid var(--site-border);
+  border-radius: 6px;
+  color: var(--site-accent);
+  background: #fff;
+  text-decoration: none;
+}
+
+.quick-links a:hover,
+.resource-links a:hover,
+.paper-links a:hover {
+  border-color: var(--site-accent);
+  color: var(--site-accent-dark);
+  text-decoration: none;
+}
+
+.research-note {
+  padding: 1rem 1.1rem;
+  margin: 1rem 0 1.75rem;
+  border-left: 4px solid var(--site-accent);
+  background: var(--site-soft);
+}
+
+.research-note p:last-child {
+  margin-bottom: 0;
+}
+
+.project-list {
+  display: grid;
+  gap: 1rem;
+  margin: 1rem 0 2rem;
+}
+
+.project-item {
+  padding: 1rem 0;
+  border-bottom: 1px solid #edf0f1;
+}
+
+.paper-entry {
+  padding: 1rem 1.05rem;
+  margin: 1rem 0 1.15rem;
+  border: 1px solid var(--site-border);
+  border-radius: 6px;
+  background: #fff;
+}
+
+.paper-entry h3,
+.project-item h3 {
+  margin-top: 0;
+  margin-bottom: .35rem;
+}
+
+.project-item p:last-child,
+.paper-entry p:last-child {
+  margin-bottom: 0;
+}
+
+.paper-meta,
+.coauthors {
+  margin-top: -.15rem;
+  color: var(--site-muted);
+  font-size: .9em;
+}
+
+.paper-abstract {
+  margin-top: .85rem;
+}
+
+.paper-keywords {
+  color: var(--site-muted);
+  font-size: .9em;
+}
+
+.paper-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .5rem;
+  font-size: .9em;
+}

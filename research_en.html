@@ -1,17 +1,18 @@
 <!DOCTYPE html>
-<html lang="en" class=" js ">
+<html lang="en" class="js">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title> Peiyuan Zhang</title>
+    <title>Research - Peiyuan Zhang</title>
     <meta property="og:locale" content="en-US">
     <meta property="og:site_name" content="Peiyuan Zhang">
-    <meta property="og:title" content="Peiyuan Zhang">
-    <link rel="canonical" href="[Placeholder: Your website URL]">
-    <meta property="og:url" content="https://cdjnzpy.github.io/">
-    <meta property="og:description" content="About me">
+    <meta property="og:title" content="Research - Peiyuan Zhang">
+    <link rel="canonical" href="https://cdjnzpy.github.io/research_en.html">
+    <meta property="og:url" content="https://cdjnzpy.github.io/research_en.html">
+    <meta property="og:description" content="Research by Peiyuan Zhang">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./files/main.css">
     <link rel="stylesheet" href="./files/academicons.css">
+    <link rel="stylesheet" href="./files/site.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
 </head>
 <body>
@@ -34,13 +35,14 @@
     <div id="main" role="main">
         <div class="sidebar sticky">
             <div itemscope="" itemtype="http://schema.org/Person">
-                <div class="author__avatar"> <img src="./files/my_pho.jpg" class="author__avatar" alt="Peiyuan Zhang"></div>
-                <div class="author__content"><h3 class="author__name">Peiyuan Zhang</h3><p class="author__bio">PhD candidate in Economics - Peking University</p></div>
+                <div class="author__avatar"><img src="./files/my_pho.jpg" class="author__avatar" alt="Peiyuan Zhang"></div>
+                <div class="author__content"><h3 class="author__name">Peiyuan Zhang</h3><p class="author__bio">PhD Candidate in Economics<br>Peking University</p></div>
                 <div class="author__urls-wrapper">
                     <button class="btn btn--inverse">Follow</button>
                     <ul class="author__urls social-icons">
                         <li><i class="fa fa-fw fa-map-marker" aria-hidden="true"></i> Beijing</li>
                         <li><a href="mailto:zpyuan@pku.edu.cn"><i class="fa fa-fw fa-envelope-square" aria-hidden="true"></i> Email</a></li>
+                        <li><a href="./cite/Peiyuan_Zhang_CV.pdf" target="_blank"><i class="fa fa-fw fa-file-pdf-o" aria-hidden="true"></i> CV</a></li>
                     </ul>
                 </div>
             </div>
@@ -48,102 +50,109 @@
         <article class="page" itemscope="" itemtype="http://schema.org/CreativeWork">
             <header><h1 class="page__title" itemprop="headline">Research</h1></header>
             <section class="page__content" itemprop="text">
-                
+
                 <h2>Working Papers</h2>
                 <hr>
+
+                <h3>Macroeconomics and Computational Economics:</h3>
+
+                <div class="paper-entry">
+                    <p>
+                        <strong>An Informed Actor-Critic Method for Economic Dynamics.</strong> (With Bo Li and Serguei Maliar)
+                        <br><em>Working paper, June 2026 draft.</em>
+                        <br><em>Abstract: This paper applies deep reinforcement learning to high-dimensional optimal control in dynamic economic models. We introduce an informed actor-critic framework that embeds structural equations and constraints directly into the policy optimization loop. Unlike standard model-free reinforcement learning algorithms that treat the economy as a black box, the iAC method leverages analytical economic transitions. Applications to benchmark consumption-savings, Krusell-Smith, and overlapping-generations economies demonstrate that iAC eliminates unnecessary exploration noise and provides a precise, scalable, and sample-efficient framework for complex macroeconomic control problems.</em>
+                        <br><span class="paper-keywords">Keywords: Reinforcement Learning; Dynamic Programming; Deep Learning; Heterogeneous Agents; Overlapping Generations; Computational Macroeconomics</span>
+                        <br><a href="./files/DDPG_V5.pdf" target="_blank">[Working Paper]</a>
+                    </p>
+                </div>
+
+                <div class="paper-entry">
+                    <p>
+                        <strong>Solving Discrete-Continuous Dynamic Choice Models: A Soft-to-Hard AI Solver with an Application to Sovereign Default.</strong> (With Bo Li and Serguei Maliar)
+                        <br><em>Working paper, June 2026 draft.</em>
+                        <br><em>Abstract: This paper introduces a soft-to-hard (StH) deep reinforcement learning framework to solve discrete-continuous dynamic choice models. To overcome vanishing gradients caused by non-differentiable kinks, we augment an actor-critic architecture with distinct training and evaluation modes. During training, hard discrete switches are replaced with soft choice probabilities, allowing gradients to pass through value branches and policy networks. The smoothing is temporary: the temperature parameter is annealed toward zero, and evaluation returns to the original hard-switch environment. Applications to one- and multi-period sovereign default problems show that the StH solver delivers accurate, scalable solutions without relying on permanent taste shocks or random maturity assumptions.</em>
+                        <br><span class="paper-keywords">Keywords: Sovereign Default; Long-Term Debt; Reinforcement Learning; Actor-Critic; Computational Economics</span>
+                        <br><a href="./files/ce2012_rl_paper_v12.pdf" target="_blank">[Working Paper]</a>
+                    </p>
+                </div>
+
+                <div class="paper-entry">
+                    <p>
+                        <strong>AI Taxing AI: A Multi-Agent Reinforcement Learning Approach to Optimal Taxation</strong> (With Bo Li)
+                        <br><em>Abstract: Artificial intelligence (AI) is improving productivity, yet its economy-wide diffusion may reshape the labor market and the distribution of income. To address these issues, we develop a Multi-Agent Reinforcement Learning (MARL) model featuring endogenous skill accumulation. We find that while AI boosts aggregate output via rapid process of skill sharing, it displaces middle-skilled humans and increases inequality. However, optimal taxation can redistribute the technological surplus to achieve Pareto improvements. To find the optimal tax schedule, we employ Dual-Loop Multi-Agent Reinforcement Learning to account for both government's fiscal policy and agent behaviors. Furthermore, we demonstrate that a ``Digital Commons'' regime---combining universal access with real-time knowledge sharing---maximizes social welfare by mitigating the trade-off between efficiency and equity.</em>
+                        <br><span class="paper-keywords">Artificial Intelligence; Optimal Taxation ; Multi-Agent Reinforcement Learning; Inequality; Knowledge Diffusion</span>
+                        <br><a href="./files/main_V5.pdf" target="_blank">[Link to Paper/Draft]</a>
+                    </p>
+                </div>
+
                 
-                <h3>Macroeconomics:</h3>
-                <p>
-                    <strong>How does AI affect society in a human-AI mixed environment?</strong> (With Bo Li)
-                    <br><em>Abstract: Nowadays, with the advance of web and internet technology, Artificial Intelligence (AI) 
-                        has significantly improved productivity in production and become an integral part of labor market.
-                        Motivated by this, our study empirically examines the impact of AI on the economy.
-                        We construct a multi-agent economic environment that incorporates both human and AI agents.
-                        A key distinction between AI and human agents lies in the seamless sharing of skills among AI agents, 
-                        while humans continue to develop their own skills. 
-                        Furthermore, we thoroughly discussed the implications of AI ownership on social welfare. 
-                        We employ the Proximal Policy Optimization (PPO) algorithm to train all agents in the environment. 
-                        Through our experiments, we uncover several important findings: 
-                        Firstly, the introduction of AI results in a substantial increase in overall productivity. 
-                        The presence of AI leads to a crowding-out effect, replacing humans in the production
-                        Secondly, AI's value creation heavily relies on the attention it garners, 
-                        and an open AI market/technology notably boosts its progress and worth. 
-                        Companies with diverse products and AI tech display greater influence in this trend.
-                        Furthermore, we highlight the significance that  implementing a proper tax policy enables the effective utilization 
-                        of the productivity advantages brought by AI while mitigating its negative impact.
-                        Overall, our work provides new insights on the complex interactions between humans and AI in economic activities. </em>
-                    <br><a href="./files/main_20240408_V6.pdf" style="color:maroon">[Link to Paper/Draft - Optional]</a>
-                </p>
-                <p>
-                    <strong>Deep Adversarial Bellman Solver for High-Dimensional Heterogeneous Agent Models.</strong> (With Bo Li)
-                    <br><em>Abstract: Solving high-dimensional Heterogeneous Agent Models (HAMs) is challenged by the curse of dimensionality and limitations of existing methods. 
-                        We introduce Deep Adversarial Bellman Solver (DABS), a unified deep learning solver directly targeting the Bellman equation 
-                        using an adversarial framework inspired by Generative Adversarial Networks (GAN). 
-                        Key innovations ensuring robustness and efficiency include stable multi-shock expectation estimation, constrained data simulation, 
-                        implicit general equilibrium handling, and experience replay. We validate DABS on the Krusell-Smith model, extensions with continuous/discrete 
-                        labor supply, and Overlapping Generations (OLG) models, demonstrating its effectiveness, robustness, and broad applicability with the same core algorithm.
-                        Our method yields accurate, smooth policy functions, shows improved stability and tail-behavior compared to benchmarks, and provides a powerful, 
-                        general, and computationally feasible approach for complex HAMs</em>
-                    <br><a href="./files/G_DL_method_paper_V2.pdf" style="color:maroon">[Link to Paper/Draft - Optional]</a>
-                </p>
-                <p>
-                    <strong>Heterogeneity Models Introduce Time-varying Risk Aversion Affected by Economic Shocks.</strong> (With Bo Li)
-                    <br><em>Abstract: We introduce a time-varying risk aversion to the Aiyagari model and link the time-varying risk aversion to the heterogenous shocks. 
-                        We also introduce different types of individuals who change their risk aversion differently by shocks. 
-                        The new model enriches the variety of individual heterogeneity without changing the random shocks and fits better gini coefficients for wealth. 
-                        And we find that the new model obtains the above effect through two mechanisms: 1) more parameter dimensions 2) influence the saving behavior.</em>
-                     <br><a href="./files/Peiyuan20220112.pdf" style="color:maroon">[Link to Paper/Draft - Optional]</a>
-                </p>
+                <div class="paper-entry">
+                    <p>
+                        <strong>A Quantitative Assessment of Pension Reform in China: Contribution, Benefit and Delayed Retirement.</strong> (With Bo Li and Yi Lu)
+                        <br><em>Working paper, December 2025 draft.</em>
+                        <br><em>Abstract: How does delayed retirement policy affect agent behavior and the aggregate economy in China? To evaluate this policy, we develop a heterogeneous OLG model with endogenous retirement choice and the contribution/benefit rules of the social security system in China. We find that an increase in the lower contribution bound significantly boosts consumption and welfare, while simultaneously improving pension finances and income equity. Furthermore, introducing a delayed retirement policy yields additional gains, as it increases welfare and reduces the pension deficit. However, the policy's effects are heterogeneous across different groups, and life-cycle contribution rules are important for policy design.</em>
+                        <br><span class="paper-keywords">Keywords: Social Security; Delayed Retirement; Heterogeneous Agents</span>
+                        <br><a href="./files/SS_retire_late.pdf" target="_blank">[Working Paper]</a>
+                    </p>
+                </div>
+
+                <div class="paper-entry">
+                    <p>
+                        <strong>Heterogeneity Models Introduce Time-Varying Risk Aversion Affected by Economic Shocks.</strong> (With Bo Li)
+                        <br><em>Abstract: We introduce a time-varying risk aversion to the Aiyagari model and link the time-varying risk aversion to heterogeneous shocks. We also introduce different types of individuals who change their risk aversion differently by shocks. The new model enriches the variety of individual heterogeneity without changing the random shocks and fits better Gini coefficients for wealth. We find that the new model obtains the above effect through two mechanisms: more parameter dimensions and influence on saving behavior.</em>
+                        <br><span class="paper-keywords">Keywords: Heterogeneous Agents; Risk Aversion; Economic Shocks; Wealth Inequality</span>
+                        <br><a href="./files/Peiyuan20220112.pdf" target="_blank">[Link to Paper/Draft]</a>
+                    </p>
+                </div>
 
                 <h3>Other Fields:</h3>
-                <p>
-                    <strong>ASSET PRICING IN CHINA’S STOCK MARKET.</strong> (With Shuaiyu Jiang)
-                    <br><em>Abstract: This paper uses traditional machine learning methods and deep neural networks
-                        based on both firm-specific characteristics and macroeconomic variables to price
-                        China's A-share stock market. The main contributions are as follows: We give the
-                        stochastic discount factor a flexible form and compare different models' performances. 
-                        Since the Chinese government adopts various policies to maintain financial stability, 
-                        we borrow the idea from generative adversarial network to find the
-                        true SDF by selecting moment condition that minimizes return volatility. Additionally, 
-                        we compare this model's performance with Chen's work and find that
-                        this model can obtain higher Sharpe ratio and R Square
-                        2</em>
-                     <br><a href="./files/assetpricing_china.pdf" style="color:maroon">[Link to Paper/Draft - Optional]</a>
-                </p>
-                <p>
-                    <strong>Forecasting crude oil spot prices using a Transformer-BiLSTM architecture with NRBO-based hyperpamameter optimization.</strong> (With Wenhui Huang)
-                    <br><em>Abstract: A future vision of global crude oil markets is crucial for market participants and policymakers. 
-                        However, making an accurate prediction of crude
-                        oil prices is always challenging, due to the difficulty in extracting both global
-                        and local information from historical price data and optimizing hyperparameter settings of the forecasting framework. In this research, a TransformerBiLSTM-NRBO forecasting model architecture is proposed to overcome these
-                        challenges. First, a Transformer-based feature extraction module is adopted
-                        to enhance the capture of global information in the forecasting framework.
-                        Then, a BiLSTM-based feature extraction module is used to enhance the
-                        capture of local information. Finally, an NRBO algorithm is adopted to
-                        optimize the key hyperparameter settings of the previous modules. Experiments conducted on daily Bent and WTI crude oil spot prices from 2013
-                        to 2024 illustrate the robust and outstanding forecasting capability of the
-                        proposed method. Research limitations and future directions are given.</em>
-                     <br><a href="./files/" style="color:maroon">[Link to Paper/Draft - Optional]</a>
-                </p>
 
-                <h2>Working in Progress</h2>
+                <div class="paper-entry">
+                    <p>
+                        <strong>Forecasting Crude Oil Spot Prices Using a Transformer-BiLSTM Architecture with NRBO-Based Hyperparameter Optimization.</strong> (With Wenhui Huang et al.)
+                        <br><em>R&amp;R at North American Journal of Economics and Finance.</em>
+                        <br><em>Abstract: A future vision of global crude oil markets is crucial for market participants and policymakers. However, making an accurate prediction of crude oil prices is always challenging, due to the difficulty in extracting both global and local information from historical price data and optimizing hyperparameter settings of the forecasting framework. This research proposes a Transformer-BiLSTM-NRBO forecasting model architecture. Experiments conducted on daily Brent and WTI crude oil spot prices from 2013 to 2024 illustrate the robust forecasting capability of the proposed method.</em>
+                        <br><span class="paper-keywords">Keywords: Crude Oil Prices; Forecasting; Transformer; BiLSTM; Hyperparameter Optimization</span>
+                    </p>
+                </div>
+
+                <h2>Publication</h2>
                 <hr>
-                <p>
-                    <strong>A Quantitative Assessment of Pension Reform in China: Contribution, Benefit and Delayed Retirement.</strong> (With Bo Li and Song Zeng)
-                    <br><em>Abstract: How does delayed retirement policy affect agent behavior and the aggregate economy in China? To evaluate this policy, we develop a heterogeneous OLG model with endogenous retirement choice and the contribution/benefit rules of the social security system in China. We find that an increase in the lower contribution bound significantly boosts consumption by 2.34\% and welfare by 1.06\%, while simultaneously improving pension finances and income equity. In contrast, adjusting the upper bound has a negligible impact. Furthermore, introducing a delayed retirement policy yields additional gains, as it increases welfare and reduces the pension deficit. However, the policy's effects are heterogeneous across different groups. Finally, we examine an extension highlighting the importance of life-cycle considerations in policy design.</em>
-                     <br><a href="./files/SS_retire_late.pdf" style="color:maroon">[Link to Paper/Draft - Optional]</a>
-                </p>
-                </p>
+                <div class="paper-entry">
+                    <p>
+                        <strong>Asset Pricing in China's Stock Market.</strong> (With Shuaiyu Jiang)
+                        <br><em>Finance &amp; Economic Vision, 2022.</em>
+                        <br><em>Abstract: This paper uses traditional machine learning methods and deep neural networks based on both firm-specific characteristics and macroeconomic variables to price China's A-share stock market. We give the stochastic discount factor a flexible form and compare different models' performances. Since the Chinese government adopts various policies to maintain financial stability, we borrow the idea from generative adversarial networks to find the true SDF by selecting moment conditions that minimize return volatility.</em>
+                        <br><span class="paper-keywords">Keywords: Asset Pricing; Machine Learning; Deep Learning; Stochastic Discount Factor; China Stock Market</span>
+                        <br><a href="./files/Asset_Pricing_in_China_Stock_Market.pdf" target="_blank">[Link to Paper]</a>
+                    </p>
+                </div>
+
+                <h2>Work in Progress</h2>
+                <hr>
+                <div class="paper-entry">
+                    <p>
+                        <strong>Learning to Expect: Conditional Expectation Functions for Neural Economic Solvers.</strong>
+                        <br><em>Abstract: Neural and model-free methods provide flexible solution frameworks for dynamic economic models, but their Bellman targets still rely on conditional expectations of continuation values, commonly approximated by one-shot Monte Carlo draws that are then discarded. This project develops W-exp, a learned conditional expectation module that converts simulated shock information into a reusable expectation function over post-decision states and improves the expectation-construction step shared by many neural and simulator-based solvers.</em>
+                        <br><span class="paper-keywords">Keywords: Conditional Expectations; Neural Solvers; Reinforcement Learning; Dynamic Economic Models</span>
+                    </p>
+                </div>
+
+                <div class="paper-entry">
+                    <p>
+                        <strong>Reduced-State Deep Learning for Heterogeneous Agent Models.</strong>
+                        <br><em>Abstract: This project develops a reduced-state neural solution method for heterogeneous agent models with aggregate uncertainty. Instead of feeding the full cross-sectional distribution into policy and value networks, we approximate the aggregate state using a low-dimensional vector of moments, such as mean capital and its dispersion, that is updated via simulation. The approach bridges the gap between belief-based approximations and full-distribution neural methods while maintaining computational tractability for high-dimensional HAM environments.</em>
+                        <br><span class="paper-keywords">Keywords: Heterogeneous Agent Models; Deep Learning; Aggregate Uncertainty; Reduced-State Approximation</span>
+                    </p>
+                </div>
 
             </section>
         </article>
     </div>
     <div class="page__footer">
         <footer>
-            <div class="page__footer-copyright">© 2025 Peiyuan Zhang. Powered by <a href="http://jekyllrb.com/" rel="nofollow">Jekyll</a> &amp; <a href="https://github.com/academicpages/academicpages.github.io">AcademicPages</a>.</div>
+            <div class="page__footer-copyright">© 2026 Peiyuan Zhang. Powered by <a href="http://jekyllrb.com/" rel="nofollow">Jekyll</a> &amp; <a href="https://github.com/academicpages/academicpages.github.io">AcademicPages</a>.</div>
         </footer>
     </div>
 </body>
 </html>
-
-
